@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    /*primary*/
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    /*accent*/
+    --blue: hsl(248, 32%, 49%);
+    /*neutral*/
+    --dark-blue: hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%);
+
+    --poppins: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--poppins);
+}
+
+body {
+    font-size: 16px;
+}
+
+section {
+    max-width: 100%;
+    width: 50%;
+}
+
+
+
+
+main {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(./intro-component-with-signup-form-master/images/bg-intro-desktop.png);
+    background-color: var(--red);
+    background-size: cover;
+    min-height: 100vh;
+    padding: 0 160px;
+
+}
+
+.container-learn {
+    color: white;
+    padding-right: 40px;
+
+
+}
+
+
+h1 {
+    font-size: 50px;
+    line-height: 56px;
+    margin-bottom: 25px;
+
+}
+
+.container-learn p {
+    line-height: 25px;
+    opacity: 0.9;
+}
+
+
+.head,
+form,
+button,
+input {
+    border-radius: 8px;
+}
+
+.head {
+    width: 90%;
+    background-color: var(--blue);
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+
+}
+
+#form {
+    background-color: white;
+    padding: 35px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+button {
+    padding: 17px 25px;
+    margin-bottom: 18px;
+    border: 1px solid #efefef;
+    font-weight: 600;
+
+}
+
+input {
+    border: 1px solid var(--grayish-blue);
+
+}
+
+button {
+
+    text-transform: uppercase;
+    background-color: hsl(154, 59%, 51%);
+    color: #ffff;
+    letter-spacing: 1px;
+
+}
+
+
+button:focus {
+    outline: none;
+}
+
+form p span {
+    color: var(--red);
+}
+
+#form p {
+    color: hsl(246, 25%, 77%);
+    font-size: 10px;
+    margin: auto;
+
+}
+
+/*classes to show error messages with javascript*/
+
+.error{
+    border: solid 1px var(--red);
+    background: url(./intro-component-with-signup-form-master/images/icon-error.svg) no-repeat;
+    background-position: 95% 50%;
+}
+
+.error-text{
+    font-size: 12px;
+    font-style: italic;
+    color:var(--red);
+    margin-left: auto;
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+
+.success{
+    border: 2px solid var(--green);
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    main {
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url(./intro-component-with-signup-form-master/images/bg-intro-mobile.png);
+        background-color: var(--red);
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+
+    }
+
+    .container-learn {
+        text-align: center;
+        padding: 40px 0 60px;
+    }
+
+    form p {
+        text-align: center;
+        
+
+    }
+
+    h1{
+        font-size: 36px;
+    }
+    .head{
+        padding: 15px 60px;
+    }
+
+}
