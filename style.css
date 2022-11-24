@@ -33,7 +33,7 @@ main {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-image: url(intro-component-with-signup-form-master/images/bg-intro-desktop.png);
+  background-image: url(/intro-component-with-signup-form-master/images/bg-intro-desktop.png);
   background-color: var(--red);
   background-size: cover;
   min-height: 100vh;
@@ -122,7 +122,7 @@ form p span {
 
 .error {
   border: solid 1px var(--red);
-  background: url(intro-component-with-signup-form-master/images/icon-error.svg)
+  background: url(/intro-component-with-signup-form-master/images/icon-error.svg)
     no-repeat;
   background-position: 95% 50%;
 }
